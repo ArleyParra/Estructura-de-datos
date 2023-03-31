@@ -1,0 +1,67 @@
+public class Mapamundi {
+
+    private int ancho;
+    private int alto;
+    private String tipo;
+    private boolean esContinente;
+
+
+    public Mapamundi(int ancho, int alto, String tipo, boolean esContinente) {
+        this.ancho = ancho;
+        this.alto = alto;
+        this.tipo = tipo;
+        this.esContinente = esContinente;
+    }
+
+  
+    public int getAncho() {
+        return ancho;
+    }
+
+    public void setAncho(int ancho) {
+        this.ancho = ancho;
+    }
+
+    public int getAlto() {
+        return alto;
+    }
+
+    public void setAlto(int alto) {
+        this.alto = alto;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public boolean isEsContinente() {
+        return esContinente;
+    }
+
+    public void setEsContinente(boolean esContinente) {
+        this.esContinente = esContinente;
+    }
+
+    // métodos
+    public void dibujar() {
+        // código para dibujar el mapamundi en una ventana o pantalla
+    }
+
+    public void rotar(int grados) {
+        // código para rotar el mapamundi
+    }
+
+    public void zoom(int porcentaje) {
+        // código para hacer zoom en el mapamundi
+    }
+
+    public static void main(String[] args) {
+        Mapamundi mapamundi = new Mapamundi(800, 600, "AMC", true);
+
+        System.out.println("El ancho del mapamundi es: " + mapamundi.getAncho());
+    }
+}
